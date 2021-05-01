@@ -18,10 +18,10 @@
   <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'> 
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-
+  
 </head>
 
-<body class="body" style="background-image: url('../images/back_ground.jpg');" onload="newpost();">
+<body class="body" style="background-image: url('../images/back.jpg');" onload="newpost();">
 
 <!-- Header section -->
 	<div class="headerfixed">
@@ -31,35 +31,6 @@
 		<div class="wrapper">
 			<!-- FriendsBook logo -->
 			<a href="../home/home.html"><img src="../images/logo.jpg" width=120 height=35 class="logoletter"/></a>
-			<!-- Search bar -->
-			<form id="searching">
-			  <input type="text" name="search" placeholder="Search.." id="search">
-			</form>
-
-			<!-- icon bar to navigate to all pages -->
-			<div class="icon-bar">
-			 <ul>
-			 	<!-- home -->
-			 	<li><a href="../home/home.html" onmouseover="headerchange(1);" onmouseout="headerorigin(1);"><img src="../images/home.png" id="friends-home"><p id="p1">Home</p></a></li>
-			 	<!-- profile -->
-			 	<li> <a href="../profile/profile.html" onmouseover="headerchange(2);" onmouseout="headerorigin(2);"><img src="../images/profile.png" id="friends-profile"><p id="p2">Profile</p></a> </li>
-			 	<!-- society -->
-			 	<li><a href="../society/society.html" onmouseover="headerchange(3);" onmouseout="headerorigin(3);"><img src="../images/society.png" id="friends-society"><p id="p3">Society</p></a></li>
-			 	<!-- message -->
-			 	<li> <a href="../messages/messages.html" onmouseover="headerchange(4);" onmouseout="headerorigin(4);"><img src="../images/message.png" id="friends-message"><p id="p4">Messages</p></a></li>
-			 	<!-- notification -->
-			 	<li><a href="#" onmouseover="headerchange(5);" onmouseout="headerorigin(5);"><img src="../images/notification.png" id="friends-notification"><p id="p5">Notifications</p></a>
-			 	
-         <div id="notify">
-			 		<p>No New Notification</p>
-			 		<hr style="background-color:black;width: 90%;">
-			 	</div>
-			 	</li>
-			 </ul>	 
-			   
-			</div>
-			<!-- Ending of Icon bar -->
-
 
 		</div>
 		<!-- Wrapper End of heading -->
@@ -78,14 +49,25 @@
 
 
 <div class="login-page">
+    
 
-    <div class="row">
-          <div class="col-md-9">
-            <a class="btn btn-outline-dark" href="#" role="button" style="text-transform:none">
-              Forgot Password ?
+     <div class="row">
+          <div class="col-md-6">
+            <a class="btn btn-outline-warning" href="/users/googleauth" role="button" style="text-transform:none">
+              <img width="20px" style="margin-bottom:1px; margin-right:5px" alt="Google sign-in" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png" />
+              Login with Google
             </a>
           </div>
-    </div>
+        </div>
+        <!-- Minified CSS and JS -->
+          <link   rel="stylesheet" 
+                  href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+                  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+                  crossorigin="anonymous">
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
+                  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" 
+                  crossorigin="anonymous">
+          </script>
 
   <div class="form">
 
@@ -93,6 +75,9 @@
       <lottie-player src="https://assets4.lottiefiles.com/datafiles/XRVoUu3IX4sGWtiC3MPpFnJvZNq7lVWDCa8LSqgS/profile.json"  background="transparent"  speed="1"  style="justify-content: center;" loop  autoplay></lottie-player>
       <input type="text" placeholder="&#xf007;  Enter your Username"/>
       <input type="password" id="password" placeholder="&#xf023;  Enter your Password"/>
+      <span class="psw" style="font-size: 75%; color:black;text-align: right;"><b>Forgot Password ?</b></a></span>
+      <br>
+      <br>
       <i class="fas fa-eye" onclick="show()"></i> 
       <br>
       <br>
@@ -103,15 +88,6 @@
     <form class="login-form">
       <button type="button" onclick="window.location.href='../signup/signup.html'">SIGN UP</button>
     </form>
-
-    <div class="row">
-          <div class="col-md-6">
-            <a class="btn btn-outline-dark" href="/users/googleauth" role="button" style="text-transform:none">
-              <img width="20px" style="margin-bottom:1px; margin-right:5px" alt="Google sign-in" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png" />
-              Login with Google
-            </a>
-          </div>
-        </div>
 
   </div>
 
