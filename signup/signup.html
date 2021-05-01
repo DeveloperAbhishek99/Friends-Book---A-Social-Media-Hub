@@ -104,14 +104,21 @@
             </button>
           </form>
 
-          <div class="row">
-          <div class="col-md-6">
-            <a class="btn btn-outline-dark" href="/users/googleauth" role="button" style="text-transform:none">
-              <img width="20px" style="margin-bottom:1px; margin-right:5px" alt="Google sign-in" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png" />
-              Login with Google
-            </a>
-          </div>
-        </div>
+        <Button
+              type="submit"
+              fullWidth
+              variant="contained"
+              color="primary"
+              onClick={handleGoogleLogin}
+            >
+              <img
+                width="20px"
+                style={{ marginBottom: "3px", marginRight: "5px" }}
+                alt="Google sign-in"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png"
+              />
+              SignIn with Google
+            </Button>
 
         </div>
 
